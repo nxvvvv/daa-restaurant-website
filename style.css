@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@900&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	font-family: "Nunito", sans-serif;
+
+	--primary: #ffffff;
+	--red: #FF0000;
+}
+
+h1 {
+	font-family: "Roboto Slab", serif;
+	color: var(--primary);
+}
+
+ul {
+	list-style: none;
+}
+
+#videoBkg {
+	position: fixed;
+	z-index: 1;
+}
+
+.hero-section {
+	position: absolute;
+	top: 30%;
+	left: 12%;
+	transform: translateY(-30%);
+	z-index: 10;
+}
+
+.hero-section>* {
+	transform: translateY(80px);
+	opacity: 0;
+	animation: fadeUp 1s ease-out forwards;
+}
+
+.hero-section h1 {
+	color: #ffffff;
+	font-size: 5rem;
+}
+
+.hero-section p {
+	color: #ffffff;
+	font-size: 1.2rem;
+	margin: 4em 0 2em 0;
+	line-height: 30px;
+}
+
+.hero-section p strong {
+	color: var(--red);
+}
+
+.hero-section button {
+	border: 2px solid var(--primary);
+	padding: 1em 1.2em;
+	outline: none;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.hero-section button:hover {
+	background-color: var(--red);
+	color: #ffffff;
+	border: 2px solid var(--red);
+}
+
+.hero-section h1:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.hero-section h1:nth-child(3) {
+	animation-delay: 0.5s;
+}
+
+.hero-section h1:nth-child(4) {
+	animation-delay: 0.8s;
+}
+
+.hero-section p {
+	animation-delay: 1s;
+}
+
+.hero-section button {
+	animation-delay: 1.2s;
+}
+
+.menu-section {
+	position: fixed;
+	width: 34%;
+	top: 5%;
+	right: 12%;
+	transform: translateY(-30%);
+	z-index: 20;
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: var(--primary);
+}
+
+.menu-section li {
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.menu-section li:hover {
+	color: var(--red);
+}
+
+.menu-section p {
+	color: var(--red);
+}
+
+.menu-section p span {
+	color: var(--primary);
+}
+
+@keyframes fadeUp {
+	0% {
+		transform: translateY(80px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+#rainbow {
+
+	/* Chrome, Safari, Opera */
+	-webkit-animation: rainbow 5s infinite;
+
+	/* Internet Explorer */
+	-ms-animation: rainbow 5s infinite;
+
+	/* Standar Syntax */
+	animation: rainbow 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow {
+	0% {
+		color: orange;
+	}
+
+	10% {
+		color: purple;
+	}
+
+	20% {
+		color: red;
+	}
+
+	30% {
+		color: CadetBlue;
+	}
+
+	40% {
+		color: yellow;
+	}
+
+	50% {
+		color: coral;
+	}
+
+	60% {
+		color: green;
+	}
+
+	70% {
+		color: cyan;
+	}
+
+	80% {
+		color: DeepPink;
+	}
+
+	90% {
+		color: DodgerBlue;
+	}
+
+	100% {
+		color: orange;
+	}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow {
+	0% {
+		color: orange;
+	}
+
+	10% {
+		color: purple;
+	}
+
+	20% {
+		color: red;
+	}
+
+	30% {
+		color: CadetBlue;
+	}
+
+	40% {
+		color: yellow;
+	}
+
+	50% {
+		color: coral;
+	}
+
+	60% {
+		color: green;
+	}
+
+	70% {
+		color: cyan;
+	}
+
+	80% {
+		color: DeepPink;
+	}
+
+	90% {
+		color: DodgerBlue;
+	}
+
+	100% {
+		color: orange;
+	}
+}
+
+/* Standar Syntax */
+@keyframes rainbow {
+	0% {
+		color: orange;
+	}
+
+	10% {
+		color: purple;
+	}
+
+	20% {
+		color: red;
+	}
+
+	30% {
+		color: CadetBlue;
+	}
+
+	40% {
+		color: yellow;
+	}
+
+	50% {
+		color: coral;
+	}
+
+	60% {
+		color: green;
+	}
+
+	70% {
+		color: cyan;
+	}
+
+	80% {
+		color: DeepPink;
+	}
+
+	90% {
+		color: DodgerBlue;
+	}
+
+	100% {
+		color: orange;
+	}
+}
+
+a.button {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+
+	text-decoration: none;
+	color: initial;
+}
+
+#fig {
+	font-family: "Nunito", sans-serif;
+	color: white;
+	place-items: center;
+	float: right;
+	font-size: 20px;
+}

@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@900&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	place-items: center;
+	font-family: "Nunito", sans-serif;
+
+	--primary: #ffffff;
+	--red: #FF0000;
+}
+
+h1 {
+	font-family: "Roboto Slab", serif;
+	color: var(--primary);
+}
+
+ul {
+	list-style: none;
+}
+
+.hero-section {
+	position: absolute;
+	top: 30%;
+	left: 12%;
+	transform: translateY(-30%);
+	z-index: 10;
+}
+
+.hero-section>* {
+	transform: translateY(80px);
+	opacity: 0;
+	animation: fadeUp 1s ease-out forwards;
+}
+
+.hero-section h1 {
+	color: #ffffff;
+	font-size: 5rem;
+}
+
+.hero-section p {
+	color: #ffffff;
+	font-size: 1.2rem;
+	margin: 4em 0 2em 0;
+	line-height: 30px;
+}
+
+.hero-section p strong {
+	color: var(--red);
+}
+
+.hero-section button {
+	border: 2px solid var(--primary);
+	padding: 1em 1.2em;
+	outline: none;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.hero-section button:hover {
+	background-color: var(--red);
+	color: #ffffff;
+	border: 2px solid var(--red);
+}
+
+.hero-section h1:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.hero-section h1:nth-child(3) {
+	animation-delay: 0.5s;
+}
+
+.hero-section h1:nth-child(4) {
+	animation-delay: 0.8s;
+}
+
+.hero-section p {
+	animation-delay: 1s;
+}
+
+.hero-section button {
+	animation-delay: 1.2s;
+}
+
+.menu-section {
+	position: fixed;
+	width: 34%;
+	top: 5%;
+	right: 12%;
+	transform: translateY(-30%);
+	z-index: 20;
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: var(--primary);
+}
+
+.menu-section li {
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.menu-section li:hover {
+	color: var(--red);
+}
+
+.menu-section p {
+	color: var(--red);
+}
+
+.menu-section p span {
+	color: var(--primary);
+}
+
+@keyframes fadeUp {
+	0% {
+		transform: translateY(80px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+#rainbow {
+
+	/* Chrome, Safari, Opera */
+	-webkit-animation: rainbow 5s infinite;
+
+	/* Internet Explorer */
+	-ms-animation: rainbow 5s infinite;
+
+	/* Standar Syntax */
+	animation: rainbow 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow {
+	0% {
+		color: orange;
+	}
+
+	10% {
+		color: purple;
+	}
+
+	20% {
+		color: red;
+	}
+
+	30% {
+		color: CadetBlue;
+	}
+
+	40% {
+		color: yellow;
+	}
+
+	50% {
+		color: coral;
+	}
+
+	60% {
+		color: green;
+	}
+
+	70% {
+		color: cyan;
+	}
+
+	80% {
+		color: DeepPink;
+	}
+
+	90% {
+		color: DodgerBlue;
+	}
+
+	100% {
+		color: orange;
+	}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow {
+	0% {
+		color: orange;
+	}
+
+	10% {
+		color: purple;
+	}
+
+	20% {
+		color: red;
+	}
+
+	30% {
+		color: CadetBlue;
+	}
+
+	40% {
+		color: yellow;
+	}
+
+	50% {
+		color: coral;
+	}
+
+	60% {
+		color: green;
+	}
+
+	70% {
+		color: cyan;
+	}
+
+	80% {
+		color: DeepPink;
+	}
+
+	90% {
+		color: DodgerBlue;
+	}
+
+	100% {
+		color: orange;
+	}
+}
+
+/* Standar Syntax */
+@keyframes rainbow {
+	0% {
+		color: orange;
+	}
+
+	10% {
+		color: purple;
+	}
+
+	20% {
+		color: red;
+	}
+
+	30% {
+		color: CadetBlue;
+	}
+
+	40% {
+		color: yellow;
+	}
+
+	50% {
+		color: coral;
+	}
+
+	60% {
+		color: green;
+	}
+
+	70% {
+		color: cyan;
+	}
+
+	80% {
+		color: DeepPink;
+	}
+
+	90% {
+		color: DodgerBlue;
+	}
+
+	100% {
+		color: orange;
+	}
+}
+
+a.button {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+
+	text-decoration: none;
+	color: initial;
+}
+
+#fig {
+	font-family: "Nunito", sans-serif;
+	color: white;
+	place-items: center;
+	float: right;
+	font-size: 20px;
+}
+
+figure.pizza {
+	font-family: 'Raleway', Arial, sans-serif;
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 220px;
+	max-width: 310px;
+	max-height: 220px;
+	width: 100%;
+	background: #000000;
+	color: #ffffff;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.pizza * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+figure.pizza img {
+	max-width: 100%;
+	position: relative;
+	opacity: 0.4;
+}
+
+figure.pizza figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+figure.pizza h2 {
+	position: absolute;
+	left: 40px;
+	right: 40px;
+	display: inline-block;
+	background: #000000;
+	-webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+	transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+	padding: 12px 5px;
+	margin: 0;
+	top: 50%;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+figure.pizza h2 span {
+	font-weight: 800;
+}
+
+figure.pizza:before {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	content: '';
+	background: #ffffff;
+	position: absolute;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(90deg) translateY(-50%);
+	transform: rotate(90deg) translateY(-50%);
+}
+
+figure.pizza:hover h2,
+figure.pizza.hover h2 {
+	-webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+	transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+}
+
+figure.pizza:hover:before,
+figure.pizza.hover:before {
+	-webkit-transform: rotate(90deg) translateY(-150%);
+	transform: rotate(90deg) translateY(-150%);
+}
